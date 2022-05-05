@@ -1,0 +1,59 @@
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 70vw;
+    max-width: 1000px;
+    min-width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    min-width: 200px;
+    height: 200px;
+    /* em - Относительно размера (текущего) шрифта элемента */
+    /* font-size: 2em; */
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.block:nth-child(even){
+    background-color: yellow;
+}
+.block:nth-child(odd){
+    background-color: green;
+}
+
+/* media запросы */
+@media all and (max-width:600px) {
+    .block{
+        font-size: 3.2rem;
+        color: white;
+    }
+}
+@media all and (max-width:400px) {
+    .container{
+        display: block;
+    }
+    .block:nth-child(even){
+        background-color: red;
+    }
+}
+
+.blocks{
+    width: 400px;
+    height: 400px;
+    background-color: darkblue;
+    position: relative;
+}
+.absolute{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: 100px;
+    left: 450px;
+}

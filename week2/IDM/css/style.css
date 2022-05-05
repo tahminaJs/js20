@@ -1,0 +1,49 @@
+ul{
+    list-style-type: none;
+    width: 500px;
+}
+
+.btn-danger{
+    height: 48px;
+    border-radius: 0;
+}
+
+.main-image{
+    background: url('../img/3792\ 1.jpg');
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li{
+    position: relative;
+}
+
+.activ::after{
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.about-us h1 {
+    font-size: 50px ;
+}
+
+.about-us h4 {
+    font-weight: bold;
+}
+
+.services {
+    background-color: #ECF0F1 ;
+}
+
+.staff__avatar {
+    background: url('../img/avatarr.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
